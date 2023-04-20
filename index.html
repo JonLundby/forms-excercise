@@ -13,12 +13,62 @@
       <h1>FORMS EXCERCISES</h1>
     </header>
 
-    <div>
-      <label for="fname">Full name:</label>
-      <input type="text" id="fname" name="fname" />
-      <label for="email">E-mail:</label>
-      <input type="text" id="email" name="email" />
-    </div>
+    <h2>Sign-up form:</h2>
+    <form action="" method="post" id="sign-up">
+      <div id="sign-up-grid" class="form-grid">
+        <label for="fullname">Full name:</label>
+        <input type="text" id="fullname" name="fullname" />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+
+        <label for="r-password">Repeat password:</label>
+        <input type="password" id="r-password" name="r-password" />
+      </div>
+
+      <h2>Payment:</h2>
+      <div id="payment-grid" class="form-grid">
+        <div id="radio" class="form-grid">
+          <input type="radio" name="payment" id="free" value="free"/>
+          <label for="free">free</label>
+
+          <input type="radio" name="payment" id="cheap" value="cheap"/>
+          <label for="cheap">cheap</label>
+
+          <input type="radio" checked name="payment" id="fair" value="fair"/>
+          <label for="fair">fair</label>
+
+          <input type="radio" name="payment" id="expensive" value="expensive"/>
+          <label for="expensive">expensive</label>
+        </div>
+
+        <div id="select">
+          <label for="pay-every"></label>
+          <select name="pay-every" id="pay-every">
+            <option value="weekly">weekly</option>
+            <option value="monthly">monthly</option>
+            <option value="yearly">yearly</option>
+          </select>
+        </div>
+      </div>
+      <br />
+
+      <input type="checkbox" checked id="newsletter"/>
+      <label for="newsletter">I would like to recieve e-mails!</label>
+      <br />
+      <input type="checkbox" id="terms" value="terms" required/>
+      <label for="terms" >I accept terms and conditions!</label>
+      <br />
+      <br />
+      <input type="submit" id="btn-submit" />
+      <input type="reset" id="btn-reset" />
+    </form>
 
     <script src="script.js"></script>
   </body>

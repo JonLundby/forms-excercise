@@ -5,3 +5,11 @@ body {
 header {
     text-align: center;
 }
+
+.form-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+    width: 20%;
+    font-weight: bold;
+}
